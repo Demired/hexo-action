@@ -30,4 +30,6 @@ else
     hexo g -d -m "$INPUT_COMMIT_MSG"
 fi
 
+chmod -R 777 public
+
 echo ::set-output name=notify::"Deploy complate."
